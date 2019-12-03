@@ -97,12 +97,12 @@ jsButton7.onclick = () => {
 
 // task 10
 
-const jsButton8 = document.getElementById('js-button7');
+const jsButton8 = document.getElementById('js-button8');
 const jsName = document.getElementById('js-name');
 
 jsButton8.onclick = () => {
-    let name;
-    if (jsName.value == '' || jsName.value == ' ') {
+    let name = jsName.value.trim();
+    if (name == '' || name == ' ') {
         alert('введите имя');
     } else {
         alert('Hello ' + jsName.value);
